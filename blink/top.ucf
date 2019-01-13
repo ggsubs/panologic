@@ -1,0 +1,18 @@
+# 100 MHz System Clock
+TIMESPEC TS_CLK = PERIOD "SYSCLK" 100 MHz HIGH 50%;
+NET "SYSCLK" TNM_NET = SYSCLK;
+
+# 100MHZ Oscillator
+NET "SYSCLK" LOC = U10 |IOSTANDARD = LVCMOS33;
+
+#============================================================
+# LEDs
+#============================================================
+NET "LED_GREEN" LOC = H1  |IOSTANDARD = LVCMOS33;
+NET "LED_BLUE"  LOC = L1  |IOSTANDARD = LVCMOS33;
+NET "LED_RED"   LOC = L3  |IOSTANDARD = LVCMOS33;
+
+#============================================================
+# BUTTON
+#============================================================
+NET "PANO_BUTTON"   LOC = R7  | IOSTANDARD = LVCMOS33;       
